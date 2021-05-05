@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.form {
+    position: relative;
+    display: flexbox;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 500px;
+    pointer-events: auto;
+    background-color: #fff;
+    padding: 30px 30px 40px 30px;
+}
+
+input, button {
+    border-radius: 0.2rem;
+}
+
+body{
+    padding-top: 8%;
+    padding-bottom: 12%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p, label, h2, button {
+    font-family: 'Poppins', sans-serif;
+}
+

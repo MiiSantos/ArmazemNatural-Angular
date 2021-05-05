@@ -1,0 +1,19 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 3px;
+    background-color: rgb(83, 116, 78);
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
+}

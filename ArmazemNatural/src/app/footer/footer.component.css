@@ -1,0 +1,12 @@
+.rodape {
+    background-color: rgb(83, 116, 78);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p {
+    font-weight: bold;
+}
