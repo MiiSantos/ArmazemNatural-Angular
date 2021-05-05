@@ -10,18 +10,18 @@
                 </div>
                 <form action="" name="entrar">
                     <div class="form-group">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" class="form-control" placeholder="Informe o usuário">
+                        <label for="email">Email</label>
+                        <input [(ngModel)]='userLogin.email' type="text" name="email" class="form-control" placeholder="Informe seu email">
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" class="form-control" placeholder="Informe sua senha">
+                        <input [(ngModel)]='userLogin.senha' type="password" name="senha" class="form-control" placeholder="Informe sua senha">
                     </div>
                     <div class="form-group">
                         <p class="text-center">Não tem uma conta? <a routerLink='/cadastro'>Cadastre-se</a></p>
                     </div>
                     <div class="col-md-12 text-center">
-                        <button type="submit" class=" btn btn-block mybtn btn-danger tx-tfm">Entrar</button>
+                        <button type="submit" class=" btn btn-block mybtn btn-danger tx-tfm" (click)='entrar()'>Entrar</button>
                     </div>
                 </form>
             </div>   
