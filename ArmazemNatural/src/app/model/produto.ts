@@ -1,3 +1,5 @@
+import { categoria } from "./Categoria"
+
 export class produto {
     public id: number
     public nome: string
@@ -9,5 +11,5 @@ export class produto {
     public imagem: string
     public peso: number
     public ativo: boolean
-    public produto: produto[]
+    public categoria: categoria
 }

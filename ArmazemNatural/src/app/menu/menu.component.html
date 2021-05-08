@@ -1,19 +1,77 @@
-<nav class="nav text-white align-items-center">
-  <p class="mt-2 ml-5">
-    <i class="fas fa-leaf mr-2"></i>
-    Armazém Natural
-  </p>
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Sobre nós</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white mr-5" href="#">Sair
-        <i class="fas fa-sign-in-alt ml-2"></i>
-      </a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img class="ml-5" src="../../assets/img/Logo.png" width="60px" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active mr-3">
+        <a class="nav-link text-white" href="#">Home <span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-3 text-white" href="#">Blog</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Minha Conta
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Usuário</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#novoProduto">Cadastro de produtos</a>
+          <a class="dropdown-item" href="#">Sair</a> <!-- (click)='sair()' -->
+        </div>
+      </li>
+    </ul>
+  </div>
 </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="novoProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastre um novo produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nome do produto</label>
+            <input type="text" class="form-control" id="produto">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Descrição</label>
+            <textarea type="text" class="form-control" id="descricao">
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">URL da imagem</label>
+            <input type="text" class="form-control" id="foto">
+          </div>
+          <div class="form-group">
+            <div class="row align-items-center">
+              <div class="col">
+                <label  for="preco">Preço</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="col">
+                <select class="form-control" name="categoria" id="categoria">Escolha a categoria
+                  <option value="">Categoria</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-info">Publicar produto</button>
+      </div>
+    </div>
+  </div>
+</div>

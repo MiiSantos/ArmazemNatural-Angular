@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
-import { userLogin } from '../model/userLogin';
+import { userLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
 @Component({

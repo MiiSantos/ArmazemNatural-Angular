@@ -1,6 +1,6 @@
 .rodape {
-    background-color: rgb(83, 116, 78);
-    font-family: 'Poppins', sans-serif;
+    background-color: rgb(89, 44, 34);
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul, li {
@@ -9,4 +9,8 @@ ul, li {
 
 p {
     font-weight: bold;
+}
+
+i {
+    color: #F28705;
 }

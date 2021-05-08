@@ -1,19 +1,28 @@
 
-.nav {
+.navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 20px;
     padding: 3px;
-    background-color: rgb(83, 116, 78);
-    font-family: 'Poppins', sans-serif;
+    background-color: rgb(89, 44, 34);
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
     font-size: 25px;
     margin-left: 10px;
     font-weight: bold;
+    
 }
 
 a {
     cursor: pointer;
+}
+
+h4 {
+    text-decoration: orange;
+}
+
+i {
+    color: #F28705;
 }

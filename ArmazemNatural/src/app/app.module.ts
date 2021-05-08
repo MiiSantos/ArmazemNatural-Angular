@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ProdutoComponent } from './produto/produto.component';
+import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component' /* não se perder nas rotas*/
 
 
 @NgModule({
@@ -19,7 +22,9 @@ import { InicioComponent } from './inicio/inicio.component';
     FooterComponent,
     LoginComponent,
     CadastroComponent,
-    InicioComponent
+    InicioComponent,
+    ProdutoComponent,
+    ListaProdutosComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,10 @@ import { InicioComponent } from './inicio/inicio.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
